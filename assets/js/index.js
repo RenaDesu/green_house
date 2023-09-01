@@ -17,3 +17,4 @@ import './modules/menu';
 import './modules/slider';
 import './modules/modal';
 import './modules/tabs';
+import './modules/faq';

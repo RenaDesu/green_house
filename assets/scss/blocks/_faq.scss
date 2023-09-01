@@ -32,18 +32,18 @@
         overflow: hidden;
 
         border-bottom: rem(1px) solid #b9b9b9;
+    }
 
-        &--open & {
-            &__question {
-                &::after {
-                    transform: rotate(180deg);
-                }
+    &__item--open & {
+        &__question {
+            &::after {
+                transform: rotate(180deg);
             }
+        }
 
-            &__answer {
-                opacity: 1;
-                transition: opacity 0.5s ease, max-height 0.5s ease;
-            }
+        &__answer {
+            opacity: 1;
+            transition: opacity 0.5s ease, max-height 0.5s ease;
         }
     }
 
@@ -79,10 +79,6 @@
     }
 
     &__answer {
-        margin: 0;
-        margin-top: rem(20px);
-        padding-bottom: rem(20px);
-
         max-height: 0;
 
         font-size: rem($font-size-big);
@@ -90,5 +86,11 @@
 
         opacity: 0;
         transition: opacity 0.3s ease, max-height 0.3s ease;
+    }
+
+    &__answer * {
+        margin: 0;
+        margin-top: rem(20px);
+        padding-bottom: rem(20px);
     }
 }
