@@ -1,8 +1,8 @@
-const tabLinks = document.querySelectorAll(".tabs__link");
-const tabContents = document.querySelectorAll(".tab-content__item");
+const tabLinks = document.querySelectorAll('.tabs__link');
+const tabContents = document.querySelectorAll('.tab-content__item');
 
 tabLinks.forEach(function(element) {
-   element.addEventListener("click", openTabs);
+   element.addEventListener('click', openTabs);
 });
 
 function openTabs(e) {
@@ -10,14 +10,14 @@ function openTabs(e) {
    const workId = btnTarget.dataset.work;
 
    tabContents.forEach(function(item) {
-      item.classList.remove("tab-content__item--active");
+      item.classList.remove('tab-content__item--active');
    });
 
    tabLinks.forEach(function(item) {
-      item.classList.remove("tabs__link--active");
+      item.classList.remove('tabs__link--active');
    });
 
-   document.querySelector(`#${workId}`).classList.add("tab-content__item--active");
+   document.querySelector(`#${workId}`).classList.add('tab-content__item--active');
 
-   btnTarget.classList.add("tabs__link--active");
+   btnTarget.classList.add('tabs__link--active');
 }

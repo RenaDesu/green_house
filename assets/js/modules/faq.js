@@ -1,7 +1,7 @@
-const accordeon = document.querySelector(".faq__list");
-const accordeonTitles = accordeon.querySelectorAll(".faq__question");
+const accordion = document.querySelector('.faq__list');
+const accordionTitles = accordion.querySelectorAll('.faq__question');
 
-accordeonTitles.forEach(function(element) {
+accordionTitles.forEach(function(element) {
   element.addEventListener('click', faqTitleClickHandler);
 })
 
@@ -13,7 +13,7 @@ function faqTitleClickHandler(evt) {
   clickedItemParent.classList.toggle('faq__item--open');
 
   if (clickedItemParent.classList.contains('faq__item--open')) {
-    clickedDescr.style.maxHeight = clickedDescr.scrollHeight + "px";
+    clickedDescr.style.maxHeight = clickedDescr.scrollHeight + 'px';
   } else {
     clickedDescr.style.maxHeight = null;
   }
