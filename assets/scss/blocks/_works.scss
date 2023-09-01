@@ -1,0 +1,16 @@
+.works {
+    padding: rem(80px) rem(110px);
+
+    background-color: #ffffff;
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: rem(40px);
+        
+        font-weight: $bold-font-weight;
+        font-size: rem(48px);
+        line-height: rem(66px);
+        
+        color: #2c2c2c;
+    }
+}

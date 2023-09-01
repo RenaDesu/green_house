@@ -25,6 +25,15 @@
 * Components
 */
 //  Пример подключения стилей блоков
-// @import "blocks/header";
-
-
+@import "blocks/page";
+@import "blocks/header";
+@import "blocks/menu";
+@import "blocks/burger";
+@import "blocks/main-nav";
+@import "blocks/slider";
+@import "blocks/modal";
+@import "blocks/callback";
+@import "blocks/works";
+@import "blocks/tabs";
+@import "blocks/tab-content";
+@import "blocks/faq";

@@ -1,0 +1,12 @@
+.menu {
+    &__logo-link {
+        text-decoration: none;
+        color: #ffffff;
+        position: relative;
+        z-index: 150;
+    }
+
+    &__burger {
+        z-index: 150;
+    }
+}

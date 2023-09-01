@@ -39,104 +39,26 @@
   }
 }
 
-@include keyframes(rotate) {
-  100% {
-    transform: rotate(-360deg);
-  }
-}
-
-@include keyframes(move-string) {
-  0% {
-    transform: translateX(100%);
-  }
-
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@include keyframes(slide-in) {
-  0% {
-    transform: translateY(600px) rotateX(30deg) scale(0);
-    transform-origin: 50% 100%;
+@include keyframes(modal-in) {
+  from {
+    transform: translateY(-150%);
     opacity: 0;
   }
 
-  100% {
-    transform: translateY(0) rotateX(0) scale(1);
-    transform-origin: 50% -1400px;
+  to {
+    transform: translateY(0%);
     opacity: 1;
   }
 }
 
-
-@include keyframes(star-scale-1) {
-  0% {
-    transform: scale(0);
-    transform-origin: 0% 50%;
-    opacity: 0;
-  }
-
-  10% {
-    transform: scale(1);
-    transform-origin: 0% 50%;
+@include keyframes(modal-out) {
+  from {
+    transform: translateY(0%);
     opacity: 1;
   }
-}
 
-@include keyframes(star-scale-2) {
-  5% {
-    transform: scale(0);
-    transform-origin: 0% 50%;
+  to {
+    transform: translateY(150%);
     opacity: 0;
-  }
-
-  15% {
-    transform: scale(1);
-    transform-origin: 0% 50%;
-    opacity: 1;
-  }
-}
-
-@include keyframes(star-scale-3) {
-  10% {
-    transform: scale(0);
-    transform-origin: 0% 50%;
-    opacity: 0;
-  }
-
-  20% {
-    transform: scale(1);
-    transform-origin: 0% 50%;
-    opacity: 1;
-  }
-}
-
-@include keyframes(star-scale-4) {
-  15% {
-    transform: scale(0);
-    transform-origin: 0% 50%;
-    opacity: 0;
-  }
-
-  25% {
-    transform: scale(1);
-    transform-origin: 0% 50%;
-    opacity: 1;
-  }
-}
-
-
-@include keyframes(star-scale-5) {
-  20% {
-    transform: scale(0);
-    transform-origin: 0% 50%;
-    opacity: 0;
-  }
-
-  30% {
-    transform: scale(1);
-    transform-origin: 0% 50%;
-    opacity: 1;
   }
 }
