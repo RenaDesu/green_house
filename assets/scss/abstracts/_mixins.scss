@@ -1,0 +1,142 @@
+@mixin object-fit($fit: fill, $position: null) {
+  -o-object-fit: $fit;
+  object-fit: $fit;
+
+  @if $position {
+    font-family: "object-fit: #{$fit}; object-position: #{$position}";
+
+    -o-object-position: $position;
+    object-position: $position;
+  }
+
+  @else {
+    font-family: "object-fit: #{$fit}";
+  }
+}
+
+@mixin list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+// Animations
+
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@include keyframes(rotate) {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@include keyframes(move-string) {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@include keyframes(slide-in) {
+  0% {
+    transform: translateY(600px) rotateX(30deg) scale(0);
+    transform-origin: 50% 100%;
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0) rotateX(0) scale(1);
+    transform-origin: 50% -1400px;
+    opacity: 1;
+  }
+}
+
+
+@include keyframes(star-scale-1) {
+  0% {
+    transform: scale(0);
+    transform-origin: 0% 50%;
+    opacity: 0;
+  }
+
+  10% {
+    transform: scale(1);
+    transform-origin: 0% 50%;
+    opacity: 1;
+  }
+}
+
+@include keyframes(star-scale-2) {
+  5% {
+    transform: scale(0);
+    transform-origin: 0% 50%;
+    opacity: 0;
+  }
+
+  15% {
+    transform: scale(1);
+    transform-origin: 0% 50%;
+    opacity: 1;
+  }
+}
+
+@include keyframes(star-scale-3) {
+  10% {
+    transform: scale(0);
+    transform-origin: 0% 50%;
+    opacity: 0;
+  }
+
+  20% {
+    transform: scale(1);
+    transform-origin: 0% 50%;
+    opacity: 1;
+  }
+}
+
+@include keyframes(star-scale-4) {
+  15% {
+    transform: scale(0);
+    transform-origin: 0% 50%;
+    opacity: 0;
+  }
+
+  25% {
+    transform: scale(1);
+    transform-origin: 0% 50%;
+    opacity: 1;
+  }
+}
+
+
+@include keyframes(star-scale-5) {
+  20% {
+    transform: scale(0);
+    transform-origin: 0% 50%;
+    opacity: 0;
+  }
+
+  30% {
+    transform: scale(1);
+    transform-origin: 0% 50%;
+    opacity: 1;
+  }
+}
