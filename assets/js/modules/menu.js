@@ -2,7 +2,7 @@ const mainNav = document.querySelector('.main-nav');
 const burgerBtn = document.querySelector('.burger');
 
 burgerBtn.addEventListener('click', (e) => {
-    const target = e.target;
+    const target = e.currentTarget;
     mainNav.classList.toggle('main-nav--open');
     target.classList.toggle('burger--active');
 
